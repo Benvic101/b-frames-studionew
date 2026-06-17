@@ -114,7 +114,7 @@
         .nav__logo img {
             width: auto;
             height: clamp(26px, 3.2vw, 40px);
-            max-width: 160px;
+            max-width: 260px;
             object-fit: contain;
         }
 
@@ -603,11 +603,22 @@
             margin-right: auto;
         }
 
-        .pricing-grid {
+.pricing-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 1.5rem;
         }
+
+        /* --- Make add-ons/partial cards behave like other pricing cards --- */
+        #services .pricing-card__name,
+        #services .pricing-card__price,
+        #services .pricing-card__desc,
+        #services .pricing-card__features,
+        #services .pricing-card__cta {
+            max-width: 100%;
+        }
+
+
 
         .pricing-card {
             background: var(--bg-card);
