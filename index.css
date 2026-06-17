@@ -949,11 +949,34 @@
             align-items: center;
         }
 
+
         .footer__logo {
             font-family: var(--font-display);
             font-size: 1.2rem;
             font-weight: 600;
             color: var(--text-primary);
+        }
+
+        /* Responsive footer logo image */
+        .footer__logo img {
+            width: auto;
+            height: clamp(28px, 4vw, 46px);
+            max-width: 240px;
+            object-fit: contain;
+        }
+
+        @media (max-width: 768px) {
+            .footer__logo img {
+                height: clamp(24px, 6vw, 38px);
+                max-width: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer__logo img {
+                height: 30px;
+                max-width: 170px;
+            }
         }
 
         .footer__logo span {
