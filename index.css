@@ -23,9 +23,6 @@
             --shadow-glow: 0 0 40px rgba(255, 149, 0, 0.08);
         }
 
-        /* ============================================
-           RESET & BASE
-           ============================================ */
         *, *::before, *::after {
             margin: 0;
             padding: 0;
@@ -81,9 +78,6 @@
             display: block;
         }
 
-        /* ============================================
-           NAVIGATION
-           ============================================ */
         .nav {
             position: fixed;
             top: 0;
@@ -117,7 +111,6 @@
         }
 
 
-        /* Responsive nav logo (img inside .nav__logo) */
         .nav__logo img {
             width: auto;
             height: clamp(26px, 3.2vw, 40px);
@@ -198,10 +191,7 @@
             font-size: 2rem;
             cursor: pointer;
         }
-
-        /* ============================================
-           HERO
-           ============================================ */
+        
         .hero {
             min-height: 100vh;
             display: flex;
@@ -342,9 +332,6 @@
             margin-top: 0.25rem;
         }
 
-        /* ============================================
-           SECTIONS — SHARED
-           ============================================ */
         section {
             padding: 7rem 2rem;
         }
@@ -380,9 +367,6 @@
             margin: 0 auto;
         }
 
-        /* ============================================
-           WORK / PORTFOLIO
-           ============================================ */
         #work {
             background: var(--bg-primary);
         }
@@ -676,7 +660,7 @@
         }
 
         .pricing-card__price span {
-            font-size: 1rem;
+            font-size: 2rem;
             font-weight: 400;
             color: var(--text-muted);
         }
